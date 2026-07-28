@@ -1,0 +1,46 @@
+info:
+  name: PushNotification
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: https://disaut.astradevelops.in/api/PushNotification
+  body:
+    type: text
+    data: "{\r
+
+      \    \"member_id\": \"0168/25\",\r
+
+      \    \"password\":\"9048177438\",\r
+
+      \    \"fcm_token\":\"\"\r
+
+      } "
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: PushNotification
+    request:
+      url: https://disaut.astradevelops.in/api/PushNotification
+      method: GET
+      body:
+        type: text
+        data: "{\r
+
+          \    \"member_id\": \"0168/25\",\r
+
+          \    \"password\":\"9048177438\",\r
+
+          \    \"fcm_token\":\"\"\r
+
+          } "
+    response:
+      body:
+        type: text
+        data: ""

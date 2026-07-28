@@ -1,0 +1,48 @@
+info:
+  name: addFamilyMember
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: https://disaut.astradevelops.in/api/addFamilyMember
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer B6EDUI5d4t
+  body:
+    type: json
+    data: |-
+      {
+        "name": "John Doe",
+        "relation": "Brother",
+        "idno":"234/45",
+        "dob": "1998-05-15",
+        "mobile": "9876543210",
+        "aadhar_no": "1234-5678-9012",
+        "image": "",
+        "nominees": [
+          {
+            "name": "Ravi",
+            "age": "30",
+            "relationship": "Brother",
+            "percentage": "50"
+          },
+          {
+            "name": "Kumar",
+            "age": "28",
+            "relationship": "Friend",
+            "percentage": "50"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

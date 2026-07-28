@@ -1,0 +1,28 @@
+info:
+  name: OtherProfile
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://disaut.astradevelops.in/api/OtherProfile
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer pOFKxe9GGr
+  body:
+    type: json
+    data: |-
+      {
+        "member_id":"123/23",
+          "amount": "100"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

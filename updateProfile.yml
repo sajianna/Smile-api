@@ -1,0 +1,33 @@
+info:
+  name: updateProfile
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: https://disaut.astradevelops.in/api/updateProfile
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer jbTZjLl373
+  body:
+    type: json
+    data: |-
+      {
+           "name": "astra123",
+           "email":"astra123@gmail.com",
+           "aadhar_no":"123434562345",
+          "image": "",  // base64 string
+          "contact": "",
+          "address": "Kanhangad, Kasaragod",
+          "dob": "12/03/1995"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

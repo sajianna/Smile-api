@@ -1,0 +1,49 @@
+info:
+  name: updateFamilyMember
+  type: http
+  seq: 12
+
+http:
+  method: PUT
+  url: https://disaut.astradevelops.in/api/updateFamilyMember
+  headers:
+    - name: Accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer B6EDUI5d4t
+  body:
+    type: json
+    data: |-
+      {
+        "id": "943",
+        "name": "janu",
+        "relation": "",
+        "idno": "",
+        "dob": "",
+        "mobile": "",
+        "aadhar_no": "",
+        "image": "",
+        "nominees": [
+          {
+            "name": "Ravi",
+            "age": "30",
+            "relationship": "Brother",
+            "percentage": "50"
+          },
+          {
+            "name": "Kumar",
+            "age": "28",
+            "relationship": "Friend",
+            "percentage": "50"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
