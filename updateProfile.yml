@@ -12,7 +12,7 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer jbTZjLl373
+      value: Bearer sfEXOtfBt7
   body:
     type: json
     data: |-
@@ -21,7 +21,7 @@ http:
            "email":"astra123@gmail.com",
            "aadhar_no":"123434562345",
           "image": "",  // base64 string
-          "contact": "",
+          "contact": "9383413878",
           "address": "Kanhangad, Kasaragod",
           "dob": "12/03/1995"
       }
