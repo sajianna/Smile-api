@@ -12,13 +12,14 @@ http:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer B6EDUI5d4t
+      value: Bearer QfyOljXa7d
 
 settings:
   encodeUrl: true
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
 
 examples:
   - name: paymentlist
